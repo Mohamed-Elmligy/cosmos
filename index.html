@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cosmos</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!--======================================== Said nav ========================================-->
+    <div id="main"> 
+      <a href="#"></a>
+      <!--======================================== part one ========================================-->
+      <section id="partOne">
+        <a href="index.html"
+          ><h3 id="logo"><span id="logoC">C</span>osmos</h3></a
+        >
+        <!--===================== Button to open the modal login form ================-->
+        <button
+          class="button"
+          onclick="document.getElementById('id01').style.display='block'"
+        >
+          <span>Login</span>
+        </button>
+
+        <!--=================== The Modal ==================-->
+        <div id="id01" class="modal">
+          <span
+            onclick="document.getElementById('id01').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+
+          <!--====================== Modal Content ======================-->
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <img src="img/avatar.jpg" alt="Avatar" class="avatar" />
+            </div>
+
+            <div class="container">
+              <label for="uname"><b>Username</b></label>
+              <input
+                type="text"
+                placeholder="Enter Username"
+                name="uname"
+                required
+              />
+
+              <label for="psw"><b>Password</b></label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                required
+              />
+
+              <button class="log" type="submit">Login</button>
+              <label>
+                <input type="checkbox" checked="checked" name="remember" />
+                Remember me
+              </label>
+            </div>
+
+            <div class="container">
+              <button
+                type="button"
+                onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn"
+              >
+                Cancel
+              </button>
+              <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+          </form>
+        </div>
+        <button
+          class="button"
+          onclick="document.getElementById('id02').style.display='block'"
+        >
+          <span>sign up</span>
+        </button>
+
+        <!--=================== The Modal 2 ==================-->
+        <div id="id02" class="modal">
+          <span
+            onclick="document.getElementById('id02').style.display='none'"
+            class="close"
+            title="Close Modal"
+            >&times;</span
+          >
+
+          <!--================== Modal Content 2 ===================-->
+          <form class="modal-content animate" action="">
+            <div class="container">
+              <label for="uname"><b> New Username</b></label>
+              <input
+                type="text"
+                placeholder="Enter Username"
+                name="uname"
+                required
+              />
+
+              <label for="psw"><b>Password</b></label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                required
+              />
+
+              <label for="psw"><b>Re Enter Password</b></label>
+              <input
+                type="password"
+                placeholder="Enter Password"
+                name="psw"
+                required
+              />
+              <button class="soial facebook">
+                <i class="fa fa-facebook"></i>
+              </button>
+              <button class="soial google-plus">
+                <i class="fa fa-google-plus"></i>
+              </button>
+              <button class="signup" type="submit">Save</button>
+            </div>
+
+            <div class="container">
+              <button
+                type="button"
+                onclick="document.getElementById('id02').style.display='none'"
+                class="cancelbtn"
+              >
+                Cancel
+              </button>
+            </div>
+          </form>
+        </div>
+        <h1>Explorer <span id="change"> </span></h1>
+        <i class="fa fa-chevron-down fa-2x"></i>
+      </section>
+      <!--========================= Scientists ========================-->
+      <section id="Scientists" class="testi">
+        <div class="overlay">
+          <div class="container">
+            <div class="client active">
+              <img src="img/1.jpg" alt="" />
+              <p class="text-center">
+                Imagination is more important than knowledge
+              </p>
+              <span> Albert Einstein</span>
+            </div>
+            <div class="client">
+              <img src="img/2.jpg" alt="" />
+              <p class="text-center">
+                The present is theirs; the future, for which I really worked, is
+                mine.
+              </p>
+              <span>Nicola Tesla </span>
+            </div>
+            <div class="client">
+              <img src="img/3.jpg" alt="" />
+              <p class="text-center">
+                It is no good to try to stop knowledge from going forward.
+                Ignorance is never better than knowledge.
+              </p>
+              <span> Enrico Firmi </span>
+            </div>
+            <div class="client">
+              <img src="img/4.jpg" alt="" />
+              <p class="text-center">
+                The first principle is that you must not fool yourself and you
+                are the easiest person to fool.
+              </p>
+              <span> Richard Feynman </span>
+            </div>
+            <div class="client">
+              <img src="img/5.jpg" alt="" />
+              <p class="text-center">
+                Nothing in life is to be feared, it is only to be understood.
+                Now is the time to understand more, so that we may fear less.
+              </p>
+              <span> Marie Curie</span>
+            </div>
+            <i class="fa fa-chevron-right fa-2x"></i>
+            <i class="fa fa-chevron-left fa-2x"></i>
+          </div>
+        </div>
+      </section>
+      <!--======================== Scientists ======================-->
+      <!--======================== gallary ======================-->
+      <section id="cosmosImgs">
+        <div class="row">
+          <div class="column">
+            <img src="img/cosmos-img/1.jpg" />
+            <img src="img/cosmos-img/2.jpg" />
+            <img src="img/cosmos-img/3.jpg" />
+            <img src="img/cosmos-img/4.jpg" />
+            <img src="img/cosmos-img/5.jpg" />
+            <img src="img/cosmos-img/4.jpg" />
+          </div>
+          <div class="column">
+            <img src="img/cosmos-img/11.jpg" />
+            <img src="img/cosmos-img/12.jpg" />
+            <img src="img/cosmos-img/6.jpg" />
+            <img src="img/cosmos-img/7.jpg" />
+            <img src="img/cosmos-img/8.jpg" />
+          </div>
+          <div class="column">
+            <img src="img/cosmos-img/9.jpg" />
+            <img src="img/cosmos-img/10.jpg" />
+            <img src="img/cosmos-img/2.jpg" />
+            <img src="img/cosmos-img/6.jpg" />
+            <img src="img/cosmos-img/8.jpg" />
+            <img src="img/cosmos-img/5.jpg" />
+          </div>
+          <div class="column">
+            <img src="img/cosmos-img/6.jpg" />
+            <img src="img/cosmos-img/12.jpg" />
+            <img src="img/cosmos-img/12.jpg" />
+            <img src="img/cosmos-img/7.jpg" />
+            <img src="img/cosmos-img/10.jpg" />
+          </div>
+        </div>
+      </section>
+      <!--======================== side nav content ======================-->
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <a href="#">Home</a>
+        <a href="#Scientists">Scientists</a>
+        <a href="#cosmosImgs">Gallery</a>
+        <a href="#Contact">Contact With Me</a>
+      </div>
+      <!-- Use any element to open the sidenav -->
+      <span onclick="openNav()" class="open"> <i class="fa fa-bars"></i> </span>
+      <!--======================== Footer ======================-->
+      <footer id="Contact">
+        <h3 id="logo"><span id="logoC">C</span>osmos</h3>
+        <h2>
+          Created By Mohamed Elmligy &copy;
+          <a href="https://www.facebook.com/MoAdel44" target="_"><i class="fa fa-facebook"></i></a>
+          <a href="https://www.instagram.com/mohamedaelmligy/" target="_"><i class="fa fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/mohamed-elmlig" target="_"><i class="fa fa-linkedin"></i></a>
+          <a href="milto:mohamedadelsa4@gmail.com" target="_"><i class="fa fa-google"></i></a>
+          <a href="https://github.com/Mohamed-Elmligy" target="_"><i class="fa fa-github"></i></a>
+        </h2>
+      </footer>
+    </div>
+          <!--======================== JQuery ======================-->
+    <script src="js/jquery.js"></script>
+          <!--======================== NiceScroll ======================-->
+    <script src="js/niceScroll.js"></script>
+          <!--======================== My script ======================-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
